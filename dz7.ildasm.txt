@@ -1,0 +1,20 @@
+.method private hidebysig static void  Main(string[] args) cil managed
+{
+  .entrypoint
+  // Размер кода:       39 (0x27)
+  .maxstack  2
+  .locals init ([0] float64 result)
+  IL_0000:  nop
+  IL_0001:  ldc.r8     5.
+  IL_000a:  ldc.r8     2.
+  IL_0013:  call       float64 [ClassLibrary1]Library1.ClassLibrary1::Divide(float64,
+                                                                             float64)
+  IL_0018:  stloc.0
+  IL_0019:  ldloc.0
+  IL_001a:  call       void [mscorlib]System.Console::WriteLine(float64)
+  IL_001f:  nop
+  IL_0020:  call       valuetype [mscorlib]System.ConsoleKeyInfo [mscorlib]System.Console::ReadKey()
+  IL_0025:  pop
+  IL_0026:  ret
+} // end of method Program::Main
+
